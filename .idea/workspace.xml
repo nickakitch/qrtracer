@@ -10,7 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="updated 'name' to 'business_name'" />
+    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="reinstalled laravel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +157,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1j8ZXdOYj8wmYTQSZCg774rZrHx" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -168,7 +168,6 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -200,7 +199,7 @@
       <workItem from="1603190186113" duration="765000" />
       <workItem from="1603190958657" duration="2898000" />
       <workItem from="1603238376902" duration="665000" />
-      <workItem from="1603239446775" duration="271000" />
+      <workItem from="1603239446775" duration="541000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1603190252581</created>
@@ -230,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603191985129</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="reinstalled laravel">
+      <created>1603239949636</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603239949636</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +261,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="installed jetstream" />
     <MESSAGE value="updated 'name' to 'business_name'" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated 'name' to 'business_name'" />
+    <MESSAGE value="reinstalled laravel" />
+    <option name="LAST_COMMIT_MESSAGE" value="reinstalled laravel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1018" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603191673248">
