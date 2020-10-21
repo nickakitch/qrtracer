@@ -4,6 +4,7 @@ use App\Http\Controllers\CheckinController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PosterController;
+use App\Http\Controllers\PrivacyStatementController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,6 +34,12 @@ Route::prefix('/checkin')->name('checkin.')->group(function() {
 Route::prefix('/poster')->name('poster.')->group(function() {
     Route::middleware('auth')->group(function() {
         Route::post('/download/{user_uuid}', [PosterController::class, 'store'])->name('store');
+    });
+});
+
+Route::prefix('/user')->middleware('auth')->name('user.')->group(function() {
+    Route::prefix('/privacy')->name('privacy.')->group(function() {
+        Route::post('/edit', [PrivacyStatementController::class, 'edit'])->name('edit');
     });
 });
 

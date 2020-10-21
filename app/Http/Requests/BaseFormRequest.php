@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use App\Http\Requests\CustomFilters\EscapeEmail;
+use App\Http\Requests\CustomFilters\EscapeUrl;
 use Elegant\Sanitizer\Laravel\SanitizesInput;
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -22,7 +23,8 @@ abstract class BaseFormRequest extends FormRequest
     {
         $sanitizer = app('sanitizer')->make($this->input(), $this->filters());
         $sanitizer->addExtensions([
-            'escape_email' => EscapeEmail::class
+            'escape_email' => EscapeEmail::class,
+            'escape_url' => EscapeUrl::class
         ]);
 
         $this->replace($sanitizer->sanitize());

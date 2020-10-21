@@ -7,9 +7,9 @@ class CheckinRequest extends BaseFormRequest
     public function rules()
     {
         return [
-            'name' => ['required'],
-            'phone' => ['required_without:email'],
-            'email' => ['required_without:phone', 'email']
+            'name' => ['required', 'max:255'],
+            'phone' => ['required_without:email', 'max:255'],
+            'email' => ['required_without:phone', 'email', 'max:255']
         ];
     }
 
