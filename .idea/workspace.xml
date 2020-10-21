@@ -10,30 +10,48 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="reinstalled laravel">
-      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/PasswordValidationRules.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/ResetUserPassword.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserPassword.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/FortifyServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/fortify.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_200000_add_two_factor_columns_to_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_030540_alter_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/navigation.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/partials/alerts.blade.php" afterDir="false" />
+    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added fortify and set up the basic registration and login pages">
+      <change afterPath="$PROJECT_DIR$/app/ClassLibrary/Utilities.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckinController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PosterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Checkin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/dompdf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/CheckinFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_040738_create_checkins_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/CheckinSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-pro/webfa-duotone-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-pro/webfa-duotone-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-pro/webfa-duotone-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-pro/webfa-duotone-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-pro/webfa-duotone-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/checkin/new.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/checkin/success.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pdf/poster.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/CheckinTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/DashboardTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/qrtracer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qrtracer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/navigation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/QRTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,9 +193,13 @@
       <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
-      <path value="$PROJECT_DIR$/vendor/werneckbh/qr-code" />
-      <path value="$PROJECT_DIR$/vendor/werneckbh/laravel-qr-code" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/simplesoftwareio/simple-qrcode" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j8ZXdOYj8wmYTQSZCg774rZrHx" />
@@ -193,7 +215,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/composer/autoload_static.php&#10;/Users/nick/Sites/qrtracer/.env" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -202,20 +224,75 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/storage/app/public" />
       <recent name="$PROJECT_DIR$/resources/views/layout" />
       <recent name="$PROJECT_DIR$/resources/views/layout/partials" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.CheckinTest.test_a_user_is_redirected_to_success_page_if_checkin_successful">
+    <configuration name="CheckinTest.test_a_user_can_checkin" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\CheckinTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CheckinTest.php" method="test_a_user_can_checkin" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CheckinTest.test_a_user_is_redirected_to_success_page_if_checkin_successful" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\CheckinTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CheckinTest.php" method="test_a_user_is_redirected_to_success_page_if_checkin_successful" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CheckinTest.test_checkin_form_is_visible" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\CheckinTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CheckinTest.php" method="test_checkin_form_is_visible" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DashboardTest.test_a_logged_in_user_can_see_the_dashboard" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\DashboardTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/DashboardTest.php" method="test_a_logged_in_user_can_see_the_dashboard" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="QRTest.test_a_poster_can_be_saved" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\QRTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/QRTest.php" method="test_a_poster_can_be_saved" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.CheckinTest.test_a_user_is_redirected_to_success_page_if_checkin_successful" />
+        <item itemvalue="PHPUnit.CheckinTest.test_a_user_can_checkin" />
+        <item itemvalue="PHPUnit.CheckinTest.test_checkin_form_is_visible" />
+        <item itemvalue="PHPUnit.QRTest.test_a_poster_can_be_saved" />
+        <item itemvalue="PHPUnit.DashboardTest.test_a_logged_in_user_can_see_the_dashboard" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -230,7 +307,8 @@
       <workItem from="1603190186113" duration="765000" />
       <workItem from="1603190958657" duration="2898000" />
       <workItem from="1603238376902" duration="665000" />
-      <workItem from="1603239446775" duration="3034000" />
+      <workItem from="1603239446775" duration="9759000" />
+      <workItem from="1603258150105" duration="10291000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1603190252581</created>
@@ -274,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603240146813</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added fortify and set up the basic registration and login pages">
+      <created>1603249676776</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603249676776</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,41 +385,58 @@
     <MESSAGE value="installed jetstream" />
     <MESSAGE value="updated 'name' to 'business_name'" />
     <MESSAGE value="reinstalled laravel" />
-    <option name="LAST_COMMIT_MESSAGE" value="reinstalled laravel" />
+    <MESSAGE value="added fortify and set up the basic registration and login pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="added fortify and set up the basic registration and login pages" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1018" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603191673248">
+    <state x="868" y="381" key="#CLI_Interpreters" timestamp="1603250569975">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1018" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603191673248" />
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603239437395">
+    <state x="868" y="381" key="#CLI_Interpreters/0.0.2560.1440@0.0.2560.1440" timestamp="1603250569975" />
+    <state x="1018" y="474" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603253423379">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603239437395" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603239437394">
+    <state x="1018" y="474" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603253423379" />
+    <state x="1018" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603270375938">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603239437394" />
-    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603239437393">
+    <state x="1018" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603270375938" />
+    <state x="931" y="505" key="EditFileWatcherDialog" timestamp="1603263357227">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603239437393" />
-    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603239437394">
+    <state x="931" y="505" key="EditFileWatcherDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603263357227" />
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603276591987">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603239437394" />
-    <state x="1052" y="437" key="NewPhpClassDialog" timestamp="1603191702174">
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603276591987" />
+    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603276591986">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1052" y="437" key="NewPhpClassDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603191702174" />
-    <state x="780" y="359" key="SettingsEditor" timestamp="1603191100850">
+    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603276591986" />
+    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603276591986">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="359" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1603191100850" />
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603240150816">
+    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603276591986" />
+    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603276591987">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603240150816" />
+    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603276591987" />
+    <state x="1052" y="437" key="NewPhpClassDialog" timestamp="1603251747994">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1052" y="437" key="NewPhpClassDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603251747994" />
+    <state x="1099" y="646" key="NewPhpFileDialog" timestamp="1603250267578">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1099" y="646" key="NewPhpFileDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603250267578" />
+    <state x="780" y="359" key="SettingsEditor" timestamp="1603250649590">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="780" y="359" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1603250649590" />
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603249685921">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603249685921" />
     <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1603190140855">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -347,9 +449,9 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1102" y="615" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603239917311" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1603245804899">
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1603271410506">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603245804899" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603271410506" />
   </component>
 </project>

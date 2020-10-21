@@ -19,9 +19,11 @@
 </head>
 <body>
 <div id="app">
-    @include('layout.partials.alerts')
-    @include('layout.navigation')
+    @if(!isset($no_nav) || !$no_nav)
+        @include('layout.navigation')
+    @endif
     <main class="container pt-3" id="app">
+        @include('layout.partials.alerts')
         @yield('content')
     </main>
 </div>
