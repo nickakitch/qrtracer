@@ -5,11 +5,11 @@
     <form action="{{ route('register') }}" method="post">
         <div class="form-group">
             <label for="business_name">Business Name</label>
-            <input type="text" required class="form-control" id="business_name" name="business_name" autocomplete="organization">
+            <input type="text" required class="form-control" id="business_name" name="business_name" value="{{ old('business_name') }}" autocomplete="organization">
         </div>
         <div class="form-group">
             <label for="email">Email address</label>
-            <input type="email" required class="form-control" id="email" name="email">
+            <input type="email" required class="form-control" id="email" name="email" value="{{ old('email') }}">
         </div>
         <div class="form-group">
             <label for="password">Password</label>

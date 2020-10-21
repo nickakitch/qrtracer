@@ -27,6 +27,7 @@ Route::prefix('/checkin')->name('checkin.')->group(function() {
     Route::get('/success', [CheckinController::class, 'success'])->name('success');
     Route::get('/{user_uuid}/new', [CheckinController::class, 'create'])->name('create');
     Route::post('/{user_uuid}/store', [CheckinController::class, 'store'])->name('store');
+    Route::get('/', [CheckinController::class, 'index'])->name('index');
 });
 
 Route::prefix('/poster')->name('poster.')->group(function() {

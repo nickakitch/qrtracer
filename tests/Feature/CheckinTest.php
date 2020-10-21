@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\Checkin;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -66,5 +67,21 @@ class CheckinTest extends TestCase
         ]);
 
         $response->assertRedirect(route('checkin.success'));
+    }
+
+    /**
+     * @runInSeparateProcess
+     * @preserveGlobalState disabled
+     */
+    public function test_a_user_can_download_a_csv_for_checkins_to_their_business()
+    {
+        $business = User::factory()->create();
+        Checkin::factory()->count(300)->create([
+            'user_id' => $business->id
+        ]);
+        $this->actingAs($business);
+
+        $response = $this->get(route('checkin.index'));
+        $response->assertOk();
     }
 }

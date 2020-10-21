@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c78d48b4e4046cfcdc22b5a85b997332",
+    "content-hash": "30c9720c8e74053a3f4d0dfea8fd2561",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -643,6 +643,71 @@
                 "validator"
             ],
             "time": "2020-09-26T15:48:38+00:00"
+        },
+        {
+            "name": "elegantweb/sanitizer",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elegantweb/sanitizer.git",
+                "reference": "f0055ecb6a8705efc390a4d48a2fcae7a4c46880"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elegantweb/sanitizer/zipball/f0055ecb6a8705efc390a4d48a2fcae7a4c46880",
+                "reference": "f0055ecb6a8705efc390a4d48a2fcae7a4c46880",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "illuminate/validation": "^6.0|^7.0|^8.0",
+                "nesbot/carbon": "^1.0|^2.0",
+                "php": "^7.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Elegant\\Sanitizer\\Laravel\\SanitizerServiceProvider"
+                    ],
+                    "aliases": {
+                        "Sanitizer": "Elegant\\Sanitizer\\Laravel\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Elegant\\Sanitizer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Wallace San Paulo",
+                    "email": "info@waavi.com"
+                },
+                {
+                    "name": "Sina Sharifzade",
+                    "email": "sharifzadesina@gmail.com"
+                }
+            ],
+            "description": "Sanitization library for PHP and the Laravel framework.",
+            "keywords": [
+                "input",
+                "input filter",
+                "input sanitation",
+                "input sanitizer",
+                "laravel",
+                "sanitation",
+                "transform input"
+            ],
+            "time": "2020-09-09T20:12:15+00:00"
         },
         {
             "name": "fideloper/proxy",

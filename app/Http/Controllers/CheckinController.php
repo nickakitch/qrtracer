@@ -2,12 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CheckinRequest;
 use App\Models\Checkin;
 use App\Models\User;
 use Illuminate\Http\Request;
 
 class CheckinController extends Controller
 {
+    public function index()
+    {
+
+    }
+
     public function create($user_uuid)
     {
         $business = User::where('uuid', $user_uuid)->firstOrFail();
@@ -15,7 +21,7 @@ class CheckinController extends Controller
         return view('checkin.new', ['business' => $business]);
     }
 
-    public function store(Request $request, $user_uuid)
+    public function store(CheckinRequest $request, $user_uuid)
     {
         $business = User::where('uuid', $user_uuid)->firstOrFail();
 
