@@ -8,18 +8,27 @@
         <form action="{{ route('checkin.store', ['user_uuid' => $business->uuid]) }}" class="text-left" method="post">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input required type="text" maxlength="255" class="form-control" id="name" name="name" value="{{ old('name') }}" autocomplete="name">
+                <input required type="text" maxlength="255" class="form-control" id="name" name="name"
+                       value="{{ old('name') }}" autocomplete="name">
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" maxlength="255" class="form-control" id="phone" name="phone" value="{{ old('phone') }}" autocomplete="tel">
+                <input type="tel" maxlength="255" class="form-control" id="phone" name="phone"
+                       value="{{ old('phone') }}" autocomplete="tel">
             </div>
             <div class="separator my-3">OR</div>
             <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" maxlength="255" class="form-control" id="email" name="email" value="{{ old('email') }}" autocomplete="email">
+                <input type="email" maxlength="255" class="form-control" id="email" name="email"
+                       value="{{ old('email') }}" autocomplete="email">
             </div>
             <button class="btn btn-primary btn-lg btn-block mt-4" type="submit">Complete</button>
+            @if(!empty($business->privacy_statement))
+                <p class="mt-3">{{ $business->privacy_statement }}</p>
+            @endif
+            @if(!empty($business->privacy_url))
+                <p>View our <a target="_blank" href="{{ $business->privacy_url }}">privacy policy</a>.</p>
+            @endif
             @csrf
         </form>
     </section>
