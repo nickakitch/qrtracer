@@ -20,9 +20,15 @@
             <input type="password" required maxlength="255" class="form-control" id="password_confirmation" name="password_confirmation">
         </div>
         <button type="submit" class="btn btn-primary">Sign up</button>
+        <input type="hidden" name="timezone" id="timezone">
         @csrf
     </form>
 @endsection
 
 @section('scripts')
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('timezone').value = moment.tz.guess()
+        }
+    </script>
 @endsection

@@ -26,7 +26,11 @@ Route::middleware('auth')->group(function() {
 
 Route::prefix('/checkin')->name('checkin.')->group(function() {
     Route::get('/success', [CheckinController::class, 'success'])->name('success');
-    Route::get('/{user_uuid}/new', [CheckinController::class, 'create'])->name('create');
+
+    /* DO NOT CHANGE THIS ROUTE - THIS URI IS IN THE PRINTED QR CODES */
+    Route::get('/{user_uuid}', [CheckinController::class, 'create'])->name('create');
+    /* ^^^ DO NOT CHANGE THIS ROUTE ^^^ */
+
     Route::post('/{user_uuid}/store', [CheckinController::class, 'store'])->name('store');
     Route::get('/', [CheckinController::class, 'index'])->name('index');
 });

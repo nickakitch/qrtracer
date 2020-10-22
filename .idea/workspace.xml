@@ -10,9 +10,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added option to save privacy info">
+    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added privacy policy and statement to checkin page">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_22_004008_add_timezone_column_to_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/partials/download_csv.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/partials/download_poster.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/partials/privacy.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/checkin/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkin/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckinController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +200,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.laravel_idea.plugin.extension.f.j" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -195,12 +208,13 @@
       <recent name="$PROJECT_DIR$/app/Http/Requests/CustomFilters" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/dashboard" />
       <recent name="$PROJECT_DIR$/storage/app/public" />
       <recent name="$PROJECT_DIR$/resources/views/layout" />
       <recent name="$PROJECT_DIR$/resources/views/layout/partials" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.PrivacyStatementTest.test_a_user_can_set_a_privacy_statement_and_url">
+  <component name="RunManager" selected="PHPUnit.CheckinTest.test_a_user_can_download_a_csv_for_checkins_to_their_business">
     <configuration name="CheckinTest.test_a_user_can_download_a_csv_for_checkins_to_their_business" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -252,9 +266,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.CheckinTest.test_a_user_can_download_a_csv_for_checkins_to_their_business" />
         <item itemvalue="PHPUnit.PrivacyStatementTest.test_a_user_can_set_a_privacy_statement_and_url" />
         <item itemvalue="PHPUnit.PrivacyStatementTest" />
-        <item itemvalue="PHPUnit.CheckinTest.test_a_user_can_download_a_csv_for_checkins_to_their_business" />
         <item itemvalue="PHPUnit.CheckinTest.test_a_user_can_load_checkins_for_their_business" />
         <item itemvalue="PHPUnit.CheckinTest.test_a_user_is_redirected_to_success_page_if_checkin_successful" />
       </list>
@@ -277,7 +291,7 @@
       <workItem from="1603258150105" duration="10291000" />
       <workItem from="1603305206402" duration="1142000" />
       <workItem from="1603308139113" duration="127000" />
-      <workItem from="1603308307853" duration="5216000" />
+      <workItem from="1603308307853" duration="9900000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1603190252581</created>
@@ -356,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603323247029</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added privacy policy and statement to checkin page">
+      <created>1603323521057</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1603323521057</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +407,8 @@
     <MESSAGE value="added registration and login&#10;added poster download in pdf&#10;added checkin ability" />
     <MESSAGE value="added form validation to checkin form" />
     <MESSAGE value="added option to save privacy info" />
-    <option name="LAST_COMMIT_MESSAGE" value="added option to save privacy info" />
+    <MESSAGE value="added privacy policy and statement to checkin page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added privacy policy and statement to checkin page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="868" y="381" key="#CLI_Interpreters" timestamp="1603250569975">
@@ -413,22 +435,22 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="931" y="505" key="EditFileWatcherDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603263357227" />
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603322538716">
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603323580991">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603322538716" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603322538715">
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603323580991" />
+    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603323580990">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603322538715" />
-    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603322538715">
+    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603323580990" />
+    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603323580990">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603322538715" />
-    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603322538716">
+    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603323580990" />
+    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603323580990">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603322538716" />
+    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603323580990" />
     <state x="1052" y="437" key="NewPhpClassDialog" timestamp="1603251747994">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -437,14 +459,14 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1099" y="646" key="NewPhpFileDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603250267578" />
-    <state x="780" y="359" key="SettingsEditor" timestamp="1603308775120">
+    <state x="780" y="359" key="SettingsEditor" timestamp="1603323562317">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="780" y="359" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1603308775120" />
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603323253439">
+    <state x="780" y="359" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1603323562317" />
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603323525974">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603323253439" />
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603323525974" />
     <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1603190140855">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -453,17 +475,17 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1076" y="637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603240029712" />
-    <state x="982" y="328" width="967" height="783" key="find.popup" timestamp="1603310247854">
+    <state x="982" y="328" width="967" height="783" key="find.popup" timestamp="1603323717998">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="982" y="328" width="967" height="783" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603310247854" />
+    <state x="982" y="328" width="967" height="783" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603323717998" />
     <state x="1102" y="615" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1603239917311">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1102" y="615" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603239917311" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1603311669973">
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1603323962330">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603311669973" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603323962330" />
   </component>
 </project>

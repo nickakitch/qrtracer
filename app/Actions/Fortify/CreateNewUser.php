@@ -3,6 +3,7 @@
 namespace App\Actions\Fortify;
 
 use App\Models\User;
+use DateTimeZone;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
@@ -30,12 +31,14 @@ class CreateNewUser implements CreatesNewUsers
                 Rule::unique(User::class),
             ],
             'password' => $this->passwordRules(),
+            'timezone' => ['string', Rule::in(DateTimeZone::listIdentifiers())]
         ])->validate();
 
         return User::create([
             'business_name' => $input['business_name'],
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
+            'timezone' => $input['timezone']
         ]);
     }
 }
