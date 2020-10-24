@@ -23,6 +23,10 @@
                 <input type="password" required maxlength="255" class="form-control" id="password_confirmation"
                        name="password_confirmation">
             </div>
+            <div class="form-group form-check">
+                <input type="checkbox" required class="form-check-input" id="disclaimer-checkbox">
+                <label class="form-check-label" for="disclaimer-checkbox">I agree to inform people prior to using their contact details for anything other than COVID-19 contact tracing purposes.</label>
+            </div>
             <button type="submit" class="btn btn-primary">Sign up</button>
             <input type="hidden" name="timezone" id="timezone">
             @csrf
