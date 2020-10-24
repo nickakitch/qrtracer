@@ -26,6 +26,7 @@
         @include('layout.partials.alerts')
         @yield('content')
     </main>
+    @include('layout.partials.footer')
 </div>
 @yield('scripts')
 </body>

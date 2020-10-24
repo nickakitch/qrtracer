@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PosterController;
 use App\Http\Controllers\PrivacyStatementController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,7 +33,7 @@ Route::prefix('/checkin')->name('checkin.')->group(function() {
     /* ^^^ DO NOT CHANGE THIS ROUTE ^^^ */
 
     Route::post('/{user_uuid}/store', [CheckinController::class, 'store'])->name('store');
-    Route::get('/', [CheckinController::class, 'index'])->name('index');
+    Route::get('/', [CheckinController::class, 'index'])->name('index')->middleware(['verified']);
 });
 
 Route::prefix('/poster')->name('poster.')->group(function() {
@@ -47,4 +48,8 @@ Route::prefix('/user')->middleware('auth')->name('user.')->group(function() {
     });
 });
 
-
+Route::prefix('/settings')->middleware('auth')->name('settings.')->group(function() {
+    Route::get('/', [UserController::class, 'edit'])->name('index');
+    Route::post('/save', [UserController::class, 'update'])->name('save');
+    Route::post('/update_password', [UserController::class, 'updatePassword'])->name('update_password');
+});
