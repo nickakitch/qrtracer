@@ -34,7 +34,7 @@ class UserController extends Controller
         try {
             $user = auth()->user();
 
-            if (Auth::attempt(['email' => $user->email, 'password' => $request->input('current_password')])) {
+            if (!Auth::attempt(['email' => $user->email, 'password' => $request->input('current_password')])) {
                 throw new Exception('The current password you entered is incorrect.');
             }
 

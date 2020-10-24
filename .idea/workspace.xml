@@ -10,28 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added csv download for users who have checked in">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdatePasswordRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UpdateUserProfileRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/forgot-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/reset-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify-email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/settings.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/partials/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/SettingsTest.php" afterDir="false" />
+    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added updating profile and password&#10;added footer disclaimer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/FortifyServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/FortifyServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/fortify.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/fortify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/navigation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,14 +201,14 @@
       <recent name="$PROJECT_DIR$/resources/views/layout/partials" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.SettingsTest.test_error_when_a_user_attempts_to_update_the_password_with_an_incorrect_current_password">
-    <configuration name="QRTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+  <component name="RunManager" selected="PHPUnit.SettingsTest">
+    <configuration name="SettingsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\QRTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/QRTest.php" scope="Class" />
+      <TestRunner class="Tests\Feature\SettingsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SettingsTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="SettingsTest.test_a_user_can_update_their_password" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -272,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.SettingsTest.test_error_when_a_user_attempts_to_update_the_password_with_an_incorrect_current_password" />
+        <item itemvalue="PHPUnit.SettingsTest" />
         <item itemvalue="PHPUnit.SettingsTest.test_a_user_can_update_their_password" />
+        <item itemvalue="PHPUnit.SettingsTest.test_error_when_a_user_attempts_to_update_the_password_with_an_incorrect_current_password" />
         <item itemvalue="PHPUnit.SettingsTest.test_a_user_can_update_their_profile_information" />
         <item itemvalue="PHPUnit.SettingsTest.test_settings_page_is_visible" />
-        <item itemvalue="PHPUnit.QRTest" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +279,7 @@
       <workItem from="1603305206402" duration="1142000" />
       <workItem from="1603308139113" duration="127000" />
       <workItem from="1603308307853" duration="10663000" />
-      <workItem from="1603564191146" duration="9640000" />
+      <workItem from="1603564191146" duration="10050000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1603190252581</created>
@@ -391,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603329105049</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added updating profile and password&#10;added footer disclaimer">
+      <created>1603580675563</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1603580675563</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +411,8 @@
     <MESSAGE value="added option to save privacy info" />
     <MESSAGE value="added privacy policy and statement to checkin page" />
     <MESSAGE value="added csv download for users who have checked in" />
-    <option name="LAST_COMMIT_MESSAGE" value="added csv download for users who have checked in" />
+    <MESSAGE value="added updating profile and password&#10;added footer disclaimer" />
+    <option name="LAST_COMMIT_MESSAGE" value="added updating profile and password&#10;added footer disclaimer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="868" y="381" key="#CLI_Interpreters" timestamp="1603250569975">
@@ -450,24 +439,24 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="931" y="505" key="EditFileWatcherDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603263357227" />
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603579616226">
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603581027175">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603579616226" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603579616225">
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603581027175" />
+    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603581027174">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1389@0.0.2560.1389" timestamp="1603426800396" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603579616225" />
-    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603579616225">
+    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603581027174" />
+    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603581027173">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603579616225" />
+    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603581027173" />
     <state width="2518" height="419" key="GridCell.Tab.0.left/0.23.2560.1366@0.0.2560.1389" timestamp="1603426800384" />
-    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603579616225">
+    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603581027174">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603579616225" />
+    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603581027174" />
     <state x="1052" y="437" key="NewPhpClassDialog" timestamp="1603251747994">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -480,10 +469,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="780" y="359" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1603323562317" />
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603329111102">
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603580694646">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603329111102" />
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603580694646" />
     <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1603190140855">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -500,9 +489,9 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1102" y="615" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603239917311" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1603571829495">
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1603580864058">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603571829495" />
+    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603580864058" />
   </component>
 </project>
