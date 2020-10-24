@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CheckinController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DonationController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PosterController;
 use App\Http\Controllers\PrivacyStatementController;
@@ -53,3 +54,5 @@ Route::prefix('/settings')->middleware('auth')->name('settings.')->group(functio
     Route::post('/save', [UserController::class, 'update'])->name('save');
     Route::post('/update_password', [UserController::class, 'updatePassword'])->name('update_password');
 });
+
+Route::get('/donation', [DonationController::class, 'confirmed'])->name('donation');
