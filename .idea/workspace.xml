@@ -10,16 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added paypal donate button">
-      <change afterPath="$PROJECT_DIR$/app/Casts/EncryptCast.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_25_002051_alter_checkins_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/qrtracer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qrtracer.iml" afterDir="false" />
+    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added database encryption">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Checkin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Checkin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/CheckinTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CheckinTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +282,7 @@
       <workItem from="1603305206402" duration="1142000" />
       <workItem from="1603308139113" duration="127000" />
       <workItem from="1603308307853" duration="10663000" />
-      <workItem from="1603564191146" duration="11633000" />
+      <workItem from="1603564191146" duration="12152000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1603190252581</created>
@@ -410,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603581982167</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added database encryption">
+      <created>1603585612500</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1603585612500</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,7 +446,8 @@
     <MESSAGE value="fixed issue with password updating" />
     <MESSAGE value="added disclaimer confirmation on registration page" />
     <MESSAGE value="added paypal donate button" />
-    <option name="LAST_COMMIT_MESSAGE" value="added paypal donate button" />
+    <MESSAGE value="added database encryption" />
+    <option name="LAST_COMMIT_MESSAGE" value="added database encryption" />
   </component>
   <component name="WindowStateProjectService">
     <state x="868" y="381" key="#CLI_Interpreters" timestamp="1603250569975">
@@ -473,24 +474,24 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="931" y="505" key="EditFileWatcherDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603263357227" />
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603585484987">
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603598748750">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603585484987" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603585484986">
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603598748750" />
+    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603598748748">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1389@0.0.2560.1389" timestamp="1603426800396" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603585484986" />
-    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603585484985">
+    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603598748748" />
+    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603598748748">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603585484985" />
+    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603598748748" />
     <state width="2518" height="419" key="GridCell.Tab.0.left/0.23.2560.1366@0.0.2560.1389" timestamp="1603426800384" />
-    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603585484986">
+    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603598748749">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603585484986" />
+    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603598748749" />
     <state x="1052" y="437" key="NewPhpClassDialog" timestamp="1603251747994">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -503,10 +504,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="780" y="359" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1603323562317" />
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603581988487">
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603585617635">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603581988487" />
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603585617635" />
     <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1603190140855">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
