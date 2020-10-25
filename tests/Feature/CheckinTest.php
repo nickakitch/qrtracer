@@ -45,11 +45,11 @@ class CheckinTest extends TestCase
             'email' => $this->faker->email
         ];
 
+        self::assertDatabaseCount('checkins', 0);
+
         $this->post(route('checkin.store', ['user_uuid' => $business->uuid]), $user_info);
 
-        self::assertDatabaseHas('checkins', array_merge([
-            'user_id' => $business->id
-        ], $user_info));
+        self::assertDatabaseHas('checkins', ['user_id' => $business->id]);
     }
 
     /**

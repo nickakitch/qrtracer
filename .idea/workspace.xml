@@ -10,12 +10,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added disclaimer confirmation on registration page">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DonationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/donation.blade.php" afterDir="false" />
+    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added paypal donate button">
+      <change afterPath="$PROJECT_DIR$/app/Casts/EncryptCast.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_25_002051_alter_checkins_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/qrtracer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qrtracer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/partials/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Checkin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Checkin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/CheckinTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CheckinTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,6 +169,9 @@
       <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
       <path value="$PROJECT_DIR$/vendor/elegantweb/sanitizer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j8ZXdOYj8wmYTQSZCg774rZrHx" />
@@ -204,7 +211,25 @@
       <recent name="$PROJECT_DIR$/resources/views/layout/partials" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.SettingsTest">
+  <component name="RunManager" selected="PHPUnit.CheckinTest.test_a_user_can_checkin">
+    <configuration name="CheckinTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\CheckinTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CheckinTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CheckinTest.test_a_user_can_checkin" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\CheckinTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CheckinTest.php" method="test_a_user_can_checkin" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="SettingsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -223,15 +248,6 @@
       <TestRunner class="Tests\Feature\SettingsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SettingsTest.php" method="test_a_user_can_update_their_password" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="SettingsTest.test_a_user_can_update_their_profile_information" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner class="Tests\Feature\SettingsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SettingsTest.php" method="test_a_user_can_update_their_profile_information" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="SettingsTest.test_error_when_a_user_attempts_to_update_the_password_with_an_incorrect_current_password" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -241,26 +257,17 @@
       <TestRunner class="Tests\Feature\SettingsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SettingsTest.php" method="test_error_when_a_user_attempts_to_update_the_password_with_an_incorrect_current_password" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="SettingsTest.test_settings_page_is_visible" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner class="Tests\Feature\SettingsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SettingsTest.php" method="test_settings_page_is_visible" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.CheckinTest.test_a_user_can_checkin" />
+        <item itemvalue="PHPUnit.CheckinTest" />
         <item itemvalue="PHPUnit.SettingsTest" />
         <item itemvalue="PHPUnit.SettingsTest.test_a_user_can_update_their_password" />
         <item itemvalue="PHPUnit.SettingsTest.test_error_when_a_user_attempts_to_update_the_password_with_an_incorrect_current_password" />
-        <item itemvalue="PHPUnit.SettingsTest.test_a_user_can_update_their_profile_information" />
-        <item itemvalue="PHPUnit.SettingsTest.test_settings_page_is_visible" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +289,7 @@
       <workItem from="1603305206402" duration="1142000" />
       <workItem from="1603308139113" duration="127000" />
       <workItem from="1603308307853" duration="10663000" />
-      <workItem from="1603564191146" duration="10805000" />
+      <workItem from="1603564191146" duration="11633000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1603190252581</created>
@@ -396,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603581326734</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added paypal donate button">
+      <created>1603581982167</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603581982167</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +445,8 @@
     <MESSAGE value="added updating profile and password&#10;added footer disclaimer" />
     <MESSAGE value="fixed issue with password updating" />
     <MESSAGE value="added disclaimer confirmation on registration page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added disclaimer confirmation on registration page" />
+    <MESSAGE value="added paypal donate button" />
+    <option name="LAST_COMMIT_MESSAGE" value="added paypal donate button" />
   </component>
   <component name="WindowStateProjectService">
     <state x="868" y="381" key="#CLI_Interpreters" timestamp="1603250569975">
@@ -458,24 +473,24 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="931" y="505" key="EditFileWatcherDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603263357227" />
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603581043575">
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603585484987">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603581043575" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603581043575">
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603585484987" />
+    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603585484986">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1389@0.0.2560.1389" timestamp="1603426800396" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603581043575" />
-    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603581043574">
+    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603585484986" />
+    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603585484985">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603581043574" />
+    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603585484985" />
     <state width="2518" height="419" key="GridCell.Tab.0.left/0.23.2560.1366@0.0.2560.1389" timestamp="1603426800384" />
-    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603581043575">
+    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603585484986">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603581043575" />
+    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603585484986" />
     <state x="1052" y="437" key="NewPhpClassDialog" timestamp="1603251747994">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -488,10 +503,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="780" y="359" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1603323562317" />
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603581334455">
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603581988487">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603581334455" />
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603581988487" />
     <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1603190140855">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
