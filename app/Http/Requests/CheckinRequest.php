@@ -2,6 +2,8 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\ReCaptchaRule;
+
 class CheckinRequest extends BaseFormRequest
 {
     public function rules()
@@ -9,7 +11,8 @@ class CheckinRequest extends BaseFormRequest
         return [
             'name' => ['required', 'max:255'],
             'phone' => ['required_without:email', 'max:255'],
-            'email' => ['required_without:phone', 'email', 'max:255']
+            'email' => ['required_without:phone', 'email', 'max:255'],
+            'recaptcha_token' => ['required', new ReCaptchaRule($this->input('recaptcha_token'))]
         ];
     }
 

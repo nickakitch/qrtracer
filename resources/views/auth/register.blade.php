@@ -2,8 +2,12 @@
 
 @section('content')
     <section class="col-md-6 offset-md-3">
+        @if($errors->has('recaptcha_token'))
+            {{$errors->first('recaptcha_token')}}
+        @endif
         <h1>Get Started</h1>
         <form action="{{ route('register') }}" method="post">
+            <input type='hidden' name='recaptcha_token' id='recaptcha_token'>
             <div class="form-group">
                 <label for="business_name">Business Name</label>
                 <input type="text" required maxlength="255" class="form-control" id="business_name" name="business_name"
@@ -35,9 +39,14 @@
 @endsection
 
 @section('scripts')
+    <script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}"></script>
     <script type="text/javascript">
         window.onload = function () {
             document.getElementById('timezone').value = moment.tz.guess()
         }
+        grecaptcha.ready(function() {
+            grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}')    .then(function(token) {
+                document.getElementById("recaptcha_token").value = token;
+            }); });
     </script>
 @endsection

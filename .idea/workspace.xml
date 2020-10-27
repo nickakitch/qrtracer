@@ -10,15 +10,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="updated Readme">
+    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added Bugsnag">
+      <change afterPath="$PROJECT_DIR$/app/Rules/ReCaptchaRule.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/qrtracer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qrtracer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CheckinRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CheckinRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/checkin/new.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkin/new.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/CheckinTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CheckinTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +178,7 @@
       <path value="$PROJECT_DIR$/vendor/bugsnag/bugsnag-laravel" />
       <path value="$PROJECT_DIR$/vendor/bugsnag/bugsnag-psr-logger" />
       <path value="$PROJECT_DIR$/vendor/bugsnag/bugsnag" />
+      <path value="$PROJECT_DIR$/vendor/google/recaptcha" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j8ZXdOYj8wmYTQSZCg774rZrHx" />
@@ -232,6 +237,15 @@
       <TestRunner class="Tests\Feature\CheckinTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CheckinTest.php" method="test_a_user_can_checkin" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="CheckinTest.test_a_user_is_redirected_to_success_page_if_checkin_successful" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\CheckinTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CheckinTest.php" method="test_a_user_is_redirected_to_success_page_if_checkin_successful" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="SettingsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -250,15 +264,6 @@
       <TestRunner class="Tests\Feature\SettingsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SettingsTest.php" method="test_a_user_can_update_their_password" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="SettingsTest.test_error_when_a_user_attempts_to_update_the_password_with_an_incorrect_current_password" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.4" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner class="Tests\Feature\SettingsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SettingsTest.php" method="test_error_when_a_user_attempts_to_update_the_password_with_an_incorrect_current_password" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -266,10 +271,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.CheckinTest.test_a_user_can_checkin" />
+        <item itemvalue="PHPUnit.CheckinTest.test_a_user_is_redirected_to_success_page_if_checkin_successful" />
         <item itemvalue="PHPUnit.CheckinTest" />
         <item itemvalue="PHPUnit.SettingsTest" />
         <item itemvalue="PHPUnit.SettingsTest.test_a_user_can_update_their_password" />
-        <item itemvalue="PHPUnit.SettingsTest.test_error_when_a_user_attempts_to_update_the_password_with_an_incorrect_current_password" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +297,7 @@
       <workItem from="1603308139113" duration="127000" />
       <workItem from="1603308307853" duration="10663000" />
       <workItem from="1603564191146" duration="12301000" />
-      <workItem from="1603741040826" duration="206000" />
+      <workItem from="1603741040826" duration="4874000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1603190252581</created>
@@ -427,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603598924495</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added Bugsnag">
+      <created>1603741257466</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603741257466</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +477,8 @@
     <MESSAGE value="added paypal donate button" />
     <MESSAGE value="added database encryption" />
     <MESSAGE value="updated Readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated Readme" />
+    <MESSAGE value="added Bugsnag" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Bugsnag" />
   </component>
   <component name="WindowStateProjectService">
     <state x="868" y="381" key="#CLI_Interpreters" timestamp="1603250569975">
@@ -480,10 +493,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1018" y="474" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603253423379" />
-    <state x="1018" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603575804569">
+    <state x="1018" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603790244125">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1018" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603575804569" />
+    <state x="1018" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603790244125" />
     <state x="1123" y="636" key="Create Form Request" timestamp="1603578929666">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -492,24 +505,24 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="931" y="505" key="EditFileWatcherDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603263357227" />
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603647388666">
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603793257912">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603647388666" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603647388665">
+    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603793257912" />
+    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603793257911">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1389@0.0.2560.1389" timestamp="1603426800396" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603647388665" />
-    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603647388665">
+    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603793257911" />
+    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603793257911">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603647388665" />
+    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603793257911" />
     <state width="2518" height="419" key="GridCell.Tab.0.left/0.23.2560.1366@0.0.2560.1389" timestamp="1603426800384" />
-    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603647388666">
+    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603793257912">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603647388666" />
+    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603793257912" />
     <state x="1052" y="437" key="NewPhpClassDialog" timestamp="1603251747994">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -522,10 +535,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="780" y="359" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1603323562317" />
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603598927615">
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1603741269001">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603598927615" />
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1603741269001" />
     <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1603190140855">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

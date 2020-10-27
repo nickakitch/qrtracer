@@ -38,11 +38,14 @@ class CheckinTest extends TestCase
      */
     public function test_a_user_can_checkin()
     {
+        $this->withoutExceptionHandling();
+
         $business = User::factory()->create();
         $user_info = [
             'name' => $this->faker->name,
             'phone' => $this->faker->phoneNumber,
-            'email' => $this->faker->email
+            'email' => $this->faker->email,
+            'recaptcha_token' => 'fake_token'
         ];
 
         self::assertDatabaseCount('checkins', 0);
@@ -63,7 +66,8 @@ class CheckinTest extends TestCase
         $response = $this->post(route('checkin.store', ['user_uuid' => $business->uuid]), [
             'name' => $this->faker->name,
             'phone' => $this->faker->phoneNumber,
-            'email' => $this->faker->email
+            'email' => $this->faker->email,
+            'recaptcha_token' => 'fake_token'
         ]);
 
         $response->assertRedirect(route('checkin.success'));

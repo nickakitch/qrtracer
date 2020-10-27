@@ -6,6 +6,7 @@
         <p>We record your attendance for COVID-19 contact tracing purposes.</p>
         <p>Please provide your contact details so we can get in touch with you if required.</p>
         <form action="{{ route('checkin.store', ['user_uuid' => $business->uuid]) }}" class="text-left" method="post">
+            <input type='hidden' name='recaptcha_token' id='recaptcha_token'>
             <div class="form-group">
                 <label for="name">Name</label>
                 <input required type="text" maxlength="255" class="form-control" id="name" name="name"
@@ -32,4 +33,14 @@
             @csrf
         </form>
     </section>
+@endsection
+
+@section('scripts')
+    <script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}"></script>
+    <script type="text/javascript">
+        grecaptcha.ready(function() {
+            grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}')    .then(function(token) {
+                document.getElementById("recaptcha_token").value = token;
+            }); });
+    </script>
 @endsection

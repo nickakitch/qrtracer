@@ -3,6 +3,7 @@
 namespace App\Actions\Fortify;
 
 use App\Models\User;
+use App\Rules\ReCaptchaRule;
 use DateTimeZone;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -31,7 +32,8 @@ class CreateNewUser implements CreatesNewUsers
                 Rule::unique(User::class),
             ],
             'password' => $this->passwordRules(),
-            'timezone' => ['string', Rule::in(DateTimeZone::listIdentifiers())]
+            'timezone' => ['string', Rule::in(DateTimeZone::listIdentifiers())],
+            'recaptcha_token' => ['required', new ReCaptchaRule($input['recaptcha_token'])]
         ])->validate();
 
         return User::create([

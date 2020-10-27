@@ -24,6 +24,3 @@
         </form>
     </section>
 @endsection
-
-@section('scripts')
-@endsection
