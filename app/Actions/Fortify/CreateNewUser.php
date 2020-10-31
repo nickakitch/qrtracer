@@ -32,7 +32,7 @@ class CreateNewUser implements CreatesNewUsers
                 Rule::unique(User::class),
             ],
             'password' => $this->passwordRules(),
-            'timezone' => ['string', Rule::in(DateTimeZone::listIdentifiers())],
+            'timezone' => ['nullable', 'string', Rule::in(DateTimeZone::listIdentifiers())],
             'recaptcha_token' => ['required', new ReCaptchaRule($input['recaptcha_token'])]
         ])->validate();
 
