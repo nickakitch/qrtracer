@@ -10,9 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added Bugsnag">
+    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added info about encryption to the welcome page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -429,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603741257466</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added info about encryption to the welcome page">
+      <created>1604122382294</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1604122382294</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +475,8 @@
     <MESSAGE value="added database encryption" />
     <MESSAGE value="updated Readme" />
     <MESSAGE value="added Bugsnag" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Bugsnag" />
+    <MESSAGE value="added info about encryption to the welcome page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added info about encryption to the welcome page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="868" y="381" key="#CLI_Interpreters" timestamp="1603250569975">
@@ -525,10 +533,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="780" y="359" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1603323562317" />
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1604108778518">
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1604122385602">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1604108778518" />
+    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1604122385602" />
     <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1603190140855">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
