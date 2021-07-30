@@ -10,9 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added info about encryption to the welcome page">
+    <list default="true" id="fe0c8c11-cde6-47f6-b07f-670f7757cf16" name="Default Changelist" comment="added google analytics">
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -64,7 +74,6 @@
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
-      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
@@ -97,7 +106,6 @@
       <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
       <path value="$PROJECT_DIR$/vendor/symfony/mime" />
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
@@ -118,7 +126,6 @@
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
@@ -186,7 +193,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/composer/autoload_static.php&#10;/Users/nick/Sites/qrtracer/.env" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests/CustomFilters" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -199,6 +206,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/Http/Requests/CustomFilters" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -288,6 +296,12 @@
       <workItem from="1603308307853" duration="10663000" />
       <workItem from="1603564191146" duration="12301000" />
       <workItem from="1603741040826" duration="4874000" />
+      <workItem from="1605641809406" duration="281000" />
+      <workItem from="1611639077263" duration="2188000" />
+      <workItem from="1611942440188" duration="222000" />
+      <workItem from="1620936835404" duration="498000" />
+      <workItem from="1622113745339" duration="18000" />
+      <workItem from="1627628483058" duration="260000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1603190252581</created>
@@ -436,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604122382294</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added google analytics">
+      <created>1604351680391</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1604351680391</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,86 +497,7 @@
     <MESSAGE value="updated Readme" />
     <MESSAGE value="added Bugsnag" />
     <MESSAGE value="added info about encryption to the welcome page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added info about encryption to the welcome page" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="868" y="381" key="#CLI_Interpreters" timestamp="1603250569975">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="868" y="381" key="#CLI_Interpreters/0.0.2560.1440@0.0.2560.1440" timestamp="1603250569975" />
-    <state x="1076" y="400" key="#com.intellij.ide.util.MemberChooser" timestamp="1603309353084">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1076" y="400" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1603309353084" />
-    <state x="1018" y="474" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603253423379">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1018" y="474" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603253423379" />
-    <state x="1018" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603790244125">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1018" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603790244125" />
-    <state x="1123" y="636" key="Create Form Request" timestamp="1603578929666">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1123" y="636" key="Create Form Request/0.0.2560.1440@0.0.2560.1440" timestamp="1603578929666" />
-    <state x="931" y="505" key="EditFileWatcherDialog" timestamp="1603263357227">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="931" y="505" key="EditFileWatcherDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603263357227" />
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom" timestamp="1603793257912">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1603793257912" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center" timestamp="1603793257911">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1389@0.0.2560.1389" timestamp="1603426800396" />
-    <state width="2518" height="419" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1603793257911" />
-    <state width="2518" height="419" key="GridCell.Tab.0.left" timestamp="1603793257911">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1603793257911" />
-    <state width="2518" height="419" key="GridCell.Tab.0.left/0.23.2560.1366@0.0.2560.1389" timestamp="1603426800384" />
-    <state width="2518" height="419" key="GridCell.Tab.0.right" timestamp="1603793257912">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="2518" height="419" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1603793257912" />
-    <state x="1052" y="437" key="NewPhpClassDialog" timestamp="1603251747994">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1052" y="437" key="NewPhpClassDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603251747994" />
-    <state x="1099" y="646" key="NewPhpFileDialog" timestamp="1603580329537">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1099" y="646" key="NewPhpFileDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603580329537" />
-    <state x="780" y="359" key="SettingsEditor" timestamp="1603323562317">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="780" y="359" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1603323562317" />
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2" timestamp="1604122385602">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="880" y="460" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1604122385602" />
-    <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1603190140855">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="100" y="100" width="2360" height="1240" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603190140855" />
-    <state x="1076" y="637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604108764901">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1076" y="637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1604108764901" />
-    <state x="982" y="328" width="967" height="783" key="find.popup" timestamp="1603323717998">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="982" y="328" width="967" height="783" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603323717998" />
-    <state x="1102" y="615" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1603239917311">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1102" y="615" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1603239917311" />
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup" timestamp="1603581536703">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="945" y="331" width="670" height="676" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1603581536703" />
+    <MESSAGE value="added google analytics" />
+    <option name="LAST_COMMIT_MESSAGE" value="added google analytics" />
   </component>
 </project>
