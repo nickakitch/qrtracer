@@ -24,6 +24,6 @@
     },
     "dependencies": {
         "@fortawesome/fontawesome-pro": "^5.15.1",
-        "moment-timezone": "^0.5.31"
+        "moment-timezone": "^0.5.34"
     }
 }
